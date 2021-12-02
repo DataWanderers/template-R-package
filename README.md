@@ -14,7 +14,7 @@ All your wonderful code nicely organized into various scripts.
 
 Should contain a `packageName.R` file which has the info about your package and built-in datasets.
 
-Should contain a `utils.R` file with utility functions used within your code, but typically not exported. To make your life easier and the code clearer.
+Should contain a `utils.R` file with utility functions used within your code, but typically not exported. To make your life easier and the code cleaner.
 
 ### tests
 
@@ -79,7 +79,7 @@ Generates a NAMESPACE file.
 
 - `devtools::test()`
 
-#### Tips
+#### Tip
 
 Collaborate making use of the Issues tracker and a branching strategy. Doing your work out in the open is strongly encouraged!
 
