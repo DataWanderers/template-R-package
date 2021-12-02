@@ -1,14 +1,50 @@
-## Template for successfully creating and managing an R package
+# Structure of an R package
 
-Very basic set-up created with `devtools::create("packageName")`.
+Want to get started quickly? Fork this repository, rename the package, and off you go.
+
+You could also start by creating a very basic setup running `devtools::create("packageName")`, and adding other folders as required.
 
 ## Folder structure 
 
 In order of importance.
 
-### README.md
+### R
 
-xyz.
+All your wonderful code nicely structured into various scripts.
+
+Should contain a `packageName.R` file which has the info about your package and built-in datasets.
+
+Should contain a `utils.R` file with utility functions used within your code, but typically not exported. To make your life easier and the code clearer.
+
+### tests
+
+Your unit tests. Your testing workflow is managed with the package **`testthat`**. 
+
+### man
+
+Your documentation is automatically put here when you run `devtools::document()`.
+
+### data & data-raw
+
+In case your package ships one or more built-in datasets, they should be put in *data*. The scripts to create them, if any, can be but in *data-raw*.
+
+### .github
+
+GitHub Actions for CI/CD pipelines.
+
+### src
+
+A storage for your C++ or other low-level source code.
+
+### inst
+
+Files (such as how to cite your package) that become available when the package is available go here.
+
+## Auxiliary folders & files 
+
+- README.md
+
+Your marketing material!
 
 <!-- badges: start -->
 <!--
@@ -19,33 +55,11 @@ xyz.
 -->
 <!-- badges: end -->
 
-### R
+- DESCRIPTION
 
-xyz.
+- .gitignore
 
-Should contain a `packageName.R` file which has the info about your package and built-in datasets.
-
-Should contain a `utils.R` file with utility functions used within your code, but typically not exported. To make your life easier and the code clearer.
-
-### tests
-
-xyz.
-
-### man
-
-xyz.
-
-### data & data-raw
-
-xyz.
-
-### src
-
-xyz.
-
-### inst
-
-xyz.
+- .Rbuildignore
 
 ## Workflow
 
@@ -55,7 +69,13 @@ xyz.
 
 - `devtools::document()`
 
+Generates a NAMESPACE file.
+
+- `devtools::test()`
+
 ### Release
+
+- `devtools::check()`
 
 - `devtools::check_win_devel()`
 
@@ -64,3 +84,7 @@ xyz.
 ## Coding style
 
 Whatever you like, as long as it is consistent within the same package. As the main developer, don't be afraid to gently remind contributors of what the preferred style is.
+
+## Reference material
+
+Hadley Wickham's book [R packages](https://r-pkgs.org/).
