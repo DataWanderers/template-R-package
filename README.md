@@ -40,7 +40,7 @@ A storage for your C++ or other low-level source code.
 
 Files (such as how to cite your package) that become available when the package is installed go here.
 
-## Auxiliary folders & files 
+## Auxiliary files 
 
 - README.md
 

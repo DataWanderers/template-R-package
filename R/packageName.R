@@ -1,4 +1,3 @@
-
 #' @title packageName: What your package does
 #'
 #' @description The \pkg{packageName} package is fantastic at doing x and y.
