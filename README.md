@@ -1,16 +1,16 @@
-# Structure of an R package
+# The (holy) structure of an R package
 
 Want to get started quickly? Fork this repository, rename the package, and off you go.
 
 You could also start by creating a very basic setup running `devtools::create("packageName")`, and adding other folders as required.
 
-## Folder structure 
+## Folders 
 
 In order of importance.
 
 ### R
 
-All your wonderful code nicely structured into various scripts.
+All your wonderful code nicely organized into various scripts.
 
 Should contain a `packageName.R` file which has the info about your package and built-in datasets.
 
@@ -18,7 +18,7 @@ Should contain a `utils.R` file with utility functions used within your code, bu
 
 ### tests
 
-Your unit tests. Your testing workflow is managed with the package **`testthat`**. 
+Your unit tests. Your testing workflow is best managed with the package **`testthat`**. 
 
 ### man
 
@@ -26,11 +26,11 @@ Your documentation is automatically put here when you run `devtools::document()`
 
 ### data & data-raw
 
-In case your package ships one or more built-in datasets, they should be put in *data*. The scripts to create them, if any, can be but in *data-raw*.
+In case your package ships one or more built-in datasets, they should be put in **data**. The scripts to create them, if any, can be but in **data-raw**.
 
 ### .github
 
-GitHub Actions for CI/CD pipelines.
+Where you define your GitHub Actions for CI/CD pipelines.
 
 ### src
 
@@ -38,13 +38,13 @@ A storage for your C++ or other low-level source code.
 
 ### inst
 
-Files (such as how to cite your package) that become available when the package is available go here.
+Files (such as how to cite your package) that become available when the package is installed go here.
 
 ## Auxiliary folders & files 
 
 - README.md
 
-Your marketing material!
+Your cool marketing material!
 
 <!-- badges: start -->
 <!--
@@ -57,9 +57,15 @@ Your marketing material!
 
 - DESCRIPTION
 
+Your boring marketing material!
+
 - .gitignore
 
+What files to "ghost" when you push to Git(Hub).
+
 - .Rbuildignore
+
+What files not to consider when you build your package, and upload it to CRAN.
 
 ## Workflow
 
@@ -72,6 +78,10 @@ Your marketing material!
 Generates a NAMESPACE file.
 
 - `devtools::test()`
+
+#### Tips
+
+Collaborate making use of the Issues tracker and a branching strategy. Doing your work out in the open is strongly encouraged!
 
 ### Release
 
