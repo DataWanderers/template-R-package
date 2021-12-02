@@ -79,9 +79,11 @@ Generates a NAMESPACE file.
 
 - `devtools::test()`
 
-#### Tip
+#### Tips
 
 Collaborate making use of the Issues tracker and a branching strategy. Doing your work out in the open is strongly encouraged!
+
+Use the package **`usethis`** throughout when needed.
 
 ### Release
 
@@ -97,4 +99,4 @@ Whatever you like, as long as it is consistent within the same package. As the m
 
 ## Reference material
 
-Hadley Wickham's book [R packages](https://r-pkgs.org/).
+Hadley Wickham's book [R packages](https://r-pkgs.org/). This [blog post](https://gontcharov.be/blog/analysis-r-package) is also a good and simple breakdown, more focused on "analysis-as-a-package".
