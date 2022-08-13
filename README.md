@@ -26,7 +26,7 @@ Your documentation is automatically put here when you run `devtools::document()`
 
 ### data & data-raw
 
-In case your package ships one or more built-in datasets, they should be put in **data**. The scripts to create them, if any, can be but in **data-raw**.
+In case your package ships one or more built-in datasets, they should be put in **data**. The scripts to create them, if any, can be put in **data-raw**.
 
 ### .github
 
